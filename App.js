@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { Card } from "./src/components/card";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>In order to WIN, you need to BEGINN!</Text>
+      <Card quote="In order to WIN, you need to BEGINN!"></Card>
       <StatusBar style="auto" />
     </View>
   );
