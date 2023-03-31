@@ -1,7 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { Card } from "./src/components/card";
+import { QuoteScreen } from "./src/screens/quote.screen";
+import { QuoteContextProvider } from "./src/services/quotes.context";
 
 export default function App() {
-  return <Card quote="In order to WIN, you need to BEGINN!"></Card>;
+  return (
+    <QuoteContextProvider>
+      <QuoteScreen></QuoteScreen>
+    </QuoteContextProvider>
+  );
 }

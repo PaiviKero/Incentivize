@@ -21,7 +21,7 @@ export const CardTextView = styled(View)`
 `;
 
 export const CardText = styled(Text)`
-  font-size: 20;
+  font-size: 20px;
   color: white;
   font-weight: bold;
 `;
