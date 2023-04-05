@@ -4,10 +4,10 @@ import { QuoteContextProvider } from "./src/services/quotes.context";
 
 export default function App() {
   return (
-    <CardImageContextProvider>
-      <QuoteContextProvider>
+    <QuoteContextProvider>
+      <CardImageContextProvider>
         <QuoteScreen></QuoteScreen>
-      </QuoteContextProvider>
-    </CardImageContextProvider>
+      </CardImageContextProvider>
+    </QuoteContextProvider>
   );
 }

@@ -18,3 +18,5 @@ web-build/
 
 yarn.lock
 yarn-error.log
+
+src/services/card-images/*

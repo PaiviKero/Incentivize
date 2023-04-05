@@ -5,16 +5,12 @@ import {
   CardText,
 } from "./card.styles";
 
-export const Card = ({ quote = "test", uri = null }) => {
+export const Card = ({ card }) => {
   return (
     <FlexView>
-      <CardBackgroundImage
-        source={{
-          uri: uri,
-        }}
-      >
+      <CardBackgroundImage source={card.imageLink}>
         <CardTextView>
-          <CardText>{quote}</CardText>
+          <CardText>{card.quote}</CardText>
         </CardTextView>
       </CardBackgroundImage>
     </FlexView>
